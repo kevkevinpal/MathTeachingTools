@@ -287,27 +287,3 @@ class Plot6(GraphScene):
             Write(self.y_axis)
         )
 
-class Test(GraphScene):
-	CONFIG = {
-		"y_max" : 50,
-		"y_min" : 0,
-		"x_max" : 7,
-		"x_min" : 0,
-		"y_tick_frequency" : 10,
-		"x_tick_frequency" : 0.5,
-		"axes_color" : BLUE,
-	}
-
-	def construct(self):
-		self.setup_axes()
-		graph = self.get_graph(lambda x : math.sin(x), color = GREEN)
-
-		self.play(
-			ShowCreation(graph),
-        	run_time = 2
-        )
-		rect = Rectangle()
-		self.play(ShowCreation(rect))
-		for i in range(len(rect.get_vertices())):
-			t = Text(f'{i}', size=0.5).move_to(rect.points[i])
-			self.play(ShowCreation(t))

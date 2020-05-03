@@ -287,3 +287,33 @@ class Plot6(GraphScene):
             Write(self.y_axis)
         )
 
+#class Code(Scene):
+#	code = CodeMobject("Helloword.html",
+#				coordinates=[-5,3],
+#				run_time=3,
+#				scale_factor=0.3,
+#				line_spacing=0.2,
+#				tab_spacing=0.6,
+#				font="Monospac821 BT",
+#				indentation_char="  ")
+#	code.scale(1)
+#	self.play(Write(code),run_time=1)
+#	def draw_code_all_lines_at_a_time(self, code):
+#		self.play(*[Write(code[i]) for i in range(code.__len__())], run_time=code.run_time)
+
+
+class Test(ThreeDScene):
+	def construct(self):
+		self.set_camera_orientation(phi=45 * DEGREES)
+		self.begin_ambient_camera_rotation(2)
+		rect = Rectangle(width=3, height=3, fill_color= ORANGE, fill_opacity=0.4, stroke_color= BLACK)
+		dot_temp = Dot(point=[0,1,3])
+		line_to_dot = Line(ORIGIN, dot_temp)
+		unit_vector = line_to_dot.get_unit_vector()
+		dot = Dot(point=dot_temp.get_center(), radius= 1).set_color(GREEN)
+		rect.rotate_to_match_vector(unit_vector)
+		self.add(rect)
+		self.add(line_to_dot)
+		self.add(dot)
+		self.wait(5)
+

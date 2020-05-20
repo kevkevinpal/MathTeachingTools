@@ -5,4 +5,4 @@ In order to use the files depending on manim you need to install a dependency ca
 
 [Convex sets and such on Desmos](https://www.desmos.com/calculator/fktwsoacrt)
 
-[Monomials, Posynomials, and non posynomial log log convex functions](https://www.desmos.com/calculator/mfxlszaj6r)
+[Monomials, Posynomials, and non posynomial log log convex functions on Desmos](https://www.desmos.com/calculator/mfxlszaj6r)

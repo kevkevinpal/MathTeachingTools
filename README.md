@@ -6,3 +6,5 @@ In order to use the files depending on manim you need to install a dependency ca
 [Convex sets and such on Desmos](https://www.desmos.com/calculator/31dywqitez)
 
 [Monomials, Posynomials, and non posynomial log log convex functions on Desmos](https://www.desmos.com/calculator/bdxjphsx95)
+
+[Linear Program example problem tutorial with cvxpy](https://nbviewer.jupyter.org/github/kevkevinpal/MathTeachingTools/blob/master/linearProgram.ipynb)
